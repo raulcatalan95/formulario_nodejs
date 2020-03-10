@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Ingrese sus datos en el <%= title %></p>
+
+    <form action="users" method="POST">
+       <input class="my-2" type="text" name="name" placeholder="Ingrese nombre">
+       <input class="my-2" type="text" name="lastname" placeholder="Ingrese apellido">
+       <input class="my-2" type="text" name="email" placeholder="Ingrese correo">
+       <input class="my-2" type="password" name="password" placeholder="Ingrese contraseña">
+       <button class="btn btn-primary bg-dark my-3" type="submit">Crear Usuario</button>
+
+
+    </form>
+
+
+    <div id="datos_clientes">
+
+      
+    </div>
+
+
+  </body>
+</html>
