@@ -10,21 +10,40 @@
     <p>Ingrese sus datos en el <%= title %></p>
 
     <form action="users" method="POST">
-       <input class="my-2" type="text" name="name" placeholder="Ingrese nombre">
-       <input class="my-2" type="text" name="lastname" placeholder="Ingrese apellido">
-       <input class="my-2" type="text" name="email" placeholder="Ingrese correo">
-       <input class="my-2" type="password" name="password" placeholder="Ingrese contraseña">
+       <input class="my-2" type="text" name="name" placeholder="Ingrese nombre" id="new_name">
+       <input class="my-2" type="text" name="lastname" placeholder="Ingrese apellido" id="new_lastname">
+       <input class="my-2" type="text" name="email" placeholder="Ingrese correo" id="new_email">
+       <input class="my-2" type="password" name="password" placeholder="Ingrese contraseña" id="new_pass">
        <button class="btn btn-primary bg-dark my-3" type="submit">Crear Usuario</button>
 
 
     </form>
 
 
-    <div id="datos_clientes">
+    
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">nombre</th>
+            <th scope="col"></th>
+            <th scope="col">apellido</th>
+            <th scope="col">correo</th>
+          </tr>
+        </thead>
+        <tbody>
+
+         
+        </tbody>
+      </table>
 
       
-    </div>
+   
 
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 
+    <script src="/javascripts/users.js"></script>
   </body>
 </html>

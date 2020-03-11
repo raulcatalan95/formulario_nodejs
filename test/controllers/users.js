@@ -15,5 +15,5 @@ exports.user_create = function(req, res, next) {
     User.find({}, function(err, users) {
       if (err) return res.json({ error: err })
       res.json(users)
-    })
+    }).sort('name')
   }
